@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/hernanpog/nftcardcomponent.git)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://hernanpog.github.io/nftcardcomponent)
 
 ## My process
 
