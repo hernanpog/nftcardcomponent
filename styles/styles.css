@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', Arial, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+main {
+  padding: 1.5em;
+  border-radius: 15px;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.3);
+  width: 18.25%;
+  min-width: 350px;
+  max-height: 596px;
+  background-color: hsl(216, 50%, 16%);
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    width: 87.5%;
+    min-width: 326px;
+  }
+}
+
+.image-container {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+.equilibrium {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.icon-container {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-radius: 9px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.view-icon {
+  position: absolute;
+  top: 42.5%;
+  left: 42.5%;
+  z-index: 2;
+}
+
+.image-container:hover .icon-container {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.35rem;
+  margin: 1.11em 0 0;
+}
+
+.description {
+  margin: 0.8em 0 1.23em;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.375;
+}
+
+@media screen and (max-width: 375px) {
+  .description {
+    font-size: 1rem;
+  }
+}
+
+.ethereum-days {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.2em 0 1.5em;
+}
+
+@media screen and (max-width: 375px) {
+  .ethereum-days {
+    margin: 1.2em 0 1em;
+  }
+}
+
+.eth, .days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eth-icon, .clock-icon {
+  margin-right: .4em;
+}
+
+.eth-amount {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.days-left {
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  border: none;
+  background-color: hsl(215, 32%, 27%);
+  height: 1px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin: 1em 0 0.5em;
+}
+
+@media screen and (max-width: 375px) {
+  .author {
+    font-size: 1em;
+    margin: 1em 0 0;
+  }
+}
+
+.author p {
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+}
+
+.avatar-image {
+  width: 11%;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-right: 0.9em;
+}
